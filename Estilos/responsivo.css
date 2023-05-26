@@ -1,0 +1,643 @@
+@charset "utf-8";
+/* RESPONSIVO */
+.contacto-responsivo{
+  display: none;
+}
+
+.banner-mediano-si img{
+    display: none;
+}
+
+.banner-chico-si img{
+  display: none;
+}
+
+.hamburger {
+    display: none;
+  }
+  
+  .bar,
+  .fa-times {
+    width: 1.5rem;
+    height: 3px;
+    display: block;
+    color: #75bf9a;
+    padding: 0;
+    margin: 6px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #75bf9a;
+  }
+  
+  .bar:nth-child(1) {
+    width: 3%;
+  }
+  
+  .bar:nth-child(2) {
+    width: 4%;
+  }
+  
+  .bar:nth-child(3) {
+    width: 5%;
+  }
+  
+
+
+@media (max-width: 992px) {
+.contacto-responsivo{
+  display: none;
+}
+
+.elbody a{
+  display: block;
+	position: absolute;
+	color: #ec3e4f;
+	font-weight: 400;
+	font-size: 50px;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	z-index: 1;
+  
+  transition: all 0.5s;
+  animation: opacidad 1.3s ease-in-out 3.5s forwards;
+  opacity: 0;
+}
+	
+.elbody a:hover{
+  transform: scale(1.2);
+  text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.hamburger{
+  margin-left: 80%;
+  margin-right: -50%;
+  margin-top: 35px;
+}
+
+
+/* LOGO */
+header img{
+	height: 60px;
+	width: auto;
+	margin: -20px 0 0 0;
+  float: left;
+}
+
+#burger1{
+  animation: opacidad 0.5s ease-out 1.2s forwards;
+  opacity: 0;
+}
+
+#burger2{
+  animation: opacidad 0.5s ease-out 1.4s forwards;
+  opacity: 0;
+
+}
+
+#burger3{
+  animation: opacidad 0.5s ease-out 1.6s forwards;
+  opacity: 0;
+}
+
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.active .bar:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+    
+.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(-315deg);
+  transform: translateY(8px) rotate(-315deg);
+  width: 5%;
+}
+    
+.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
+  width: 5%;
+}
+
+.nav-menu{
+  display: flex;
+  gap: 0;
+  width: 100%;
+  height: 87%;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  align-items: center;
+  position: fixed;
+  top: 90px;
+  right: -170%;
+  -webkit-transition: 0.5s;
+  transition: 0.6s ease-in-out;
+  border-radius: none;
+  padding-top: 0;
+
+  background: #75bf9a;
+  color: white;
+}
+  
+.nav-menu a{
+  height: auto;
+  width: 150px;
+  text-decoration: none;
+  padding: 40px 100%;
+  border-radius: none;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 15%;
+}
+      
+.nav-menu a:hover{
+  color: #75bf9a;
+  background: white;
+  padding: 35px 100%;
+  font-weight: 700;
+}
+
+.active {
+  right: 0;
+  z-index: 10;
+  transition: 0.2s ease;
+}
+
+/* BANNER Y ESO */
+.banner-grande-si img{
+  display: none;
+}
+
+.banner-chico-si img{
+  display: none;
+}
+
+.banner{
+	width: 100%;
+	z-index: -2;
+}
+
+.banner-mediano-si{
+	z-index: -2;
+}
+
+.banner-mediano-si img{
+  display: block;
+  width: 100%;
+	height: auto;
+}
+
+.encabezado{
+        position: absolute;
+        top: 40%;
+        left: 12%;
+        color: #f49277;
+        z-index: 1;
+    
+        animation: opacidad 1.3s ease-in-out 2.5s forwards;
+        opacity: 0;
+    }
+
+.encabezado h1{
+        font-family: 'baskerville old face';
+        font-size: 75px;
+        font-weight: 100;
+    }
+
+/* SOBRE MI */
+#sobre-mi img{
+	display: block;
+	float: left;
+	width: auto;
+	height: 210px;
+	margin-left: 38%;
+  margin-top: 25px;
+}
+
+#sobre-mi h3{
+	margin-top: 5px;
+	font-size: 45px;
+	color: #ec3e4f;
+	margin-bottom: 5px;
+	font-family: "baskerville old face";
+	font-weight: 100;
+}
+
+.lape{
+	display: block;
+	align-items: center;
+	margin-left: 5%;
+}
+
+#sobre-mi p{
+	font-size: 15px;
+	color: black;
+	width: 93%;
+	text-align: justify;
+	margin-top: 10px;
+}
+
+.line-1{
+	height: 1px;
+	width: 21%;
+	margin: 20px 0;
+	margin-left: 40%;
+}
+
+hr{
+	background-color: #ec3e4f;
+	height: 1px;
+	border-radius: 5px;
+}
+
+/* HABILIDADES */
+.container{
+  width: 85%;
+  margin: 0px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* CONTACTO */
+.contacto{
+	width: auto;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+.contacto a img{
+	width: 75px;
+	height: auto;
+	justify-content: center;
+	padding: 10px 25px 0px 25px;
+	display: flex;
+	
+	transition: all 0.8s;
+}
+
+.contacto img:hover{
+	transform: scale(1.1);
+}
+
+}
+  
+
+@media screen and (max-width: 600px) {
+    a.nav-link {
+      padding: 0px 10px;
+    }
+
+  .elbody a{
+    display: block;
+    position: absolute;
+    color: #ec3e4f;
+    font-weight: 400;
+    font-size: 50px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1;
+    
+    transition: all 0.5s;
+  
+    animation: opacidad 1.3s ease-in-out 3.5s forwards;
+    opacity: 0;
+  }
+    
+  .elbody a:hover{
+    transform: scale(1.2);
+    text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left{
+    top: 13%;
+    left: 2%;
+  }
+  
+  .right{
+    top: 13%;
+    left: 80%;
+  }
+  
+  
+  .hamburger{
+    margin-left: 80%;
+    margin-right: -50%;
+    margin-top: 35px;
+  }
+  
+  
+  /* LOGO */
+  header img{
+    height: 60px;
+    width: auto;
+    margin: -20px 0 0 0;
+    float: left;
+  }
+  
+  #burger1{
+    animation: opacidad 0.5s ease-out 1.2s forwards;
+    opacity: 0;
+  }
+  
+  #burger2{
+    animation: opacidad 0.5s ease-out 1.4s forwards;
+    opacity: 0;
+  
+  }
+  
+  #burger3{
+    animation: opacidad 0.5s ease-out 1.6s forwards;
+    opacity: 0;
+  }
+  
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .active .bar:nth-child(2) {
+    opacity: 0;
+    width: 0;
+  }
+      
+  .active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(-315deg);
+    transform: translateY(8px) rotate(-315deg);
+    width: 5%;
+  }
+      
+  .active .bar:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+    width: 5%;
+  }
+  
+  .nav-menu{
+    display: flex;
+    gap: 0;
+    width: 100%;
+    height: 87%;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    right: -170%;
+    -webkit-transition: 0.5s;
+    transition: 0.6s ease-in-out;
+    border-radius: none;
+    padding-top: 0;
+  
+    background: #75bf9a;
+    color: white;
+  }
+    
+  .nav-menu a{
+    height: auto;
+    width: 150px;
+    text-decoration: none;
+    padding: 40px 100%;
+    border-radius: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 15%;
+  }
+        
+  .nav-menu a:hover{
+    color: #75bf9a;
+    background: white;
+    padding: 35px 100%;
+    font-weight: 700;
+  }
+  
+  .active {
+    right: 0;
+    z-index: 10;
+    transition: 0.2s ease;
+  }
+  
+  /* BANNER Y ESO */
+  .banner-grande-si img{
+    display: none;
+  }
+
+  .banner-mediano-si img{
+    display: none;
+  }
+  
+  .banner{
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .banner-chico-si{
+    z-index: -2;
+  }
+  
+  .banner-chico-si img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.encabezado{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  color: #f49277;
+  z-index: 1;
+      
+  animation: opacidad 1.3s ease-in-out 2.5s forwards;
+  opacity: 0;
+}
+  
+.encabezado h1{
+  font-family: 'baskerville old face';
+  font-size: 60px;
+  font-weight: 100;
+}
+  
+  /* SOBRE MI */
+  #sobre-mi img{
+    display: block;
+    float: left;
+    width: auto;
+    height: 200px;
+    margin-left: 35%;
+    margin-top: 25px;
+  }
+
+  
+#sobre-mi h2{
+	margin-top: 0;
+	font-size: 20px;
+	color: #75bf9a;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+  
+  #sobre-mi h3{
+    margin-top: 5px;
+    font-size: 47px;
+    color: #ec3e4f;
+    margin-bottom: 5px;
+    font-family: "baskerville old face";
+    font-weight: 100;
+  }
+  
+  .lape{
+    display: block;
+    align-items: center;
+    margin-left: 5%;
+  }
+  
+  #sobre-mi p{
+    font-size: 13px;
+    color: black;
+    width: 93%;
+    text-align: justify;
+    margin-top: 10px;
+  }
+  
+  .line-1{
+    height: 1px;
+    width: 21%;
+    margin: 15px 0;
+    margin-left: 40%;
+  }
+  
+  hr{
+    background-color: #ec3e4f;
+    height: 1px;
+    border-radius: 5px;
+  }
+  
+  /* HABILIDADES */
+  #habilidades h2{
+    font-size: 20px;
+    color: #75bf9a;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .container{
+    width: 90%;
+    margin: 8% 5.5% 5%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.container .card .face{
+  width: 120px;
+  height: 120px;
+  transition: 0.5s;
+	border-radius: 5px;	
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(20px);
+}
+
+.container .card .face.face1 .content img{
+  max-width: 80px;
+}
+
+.container .card .face.face1 .content h4{
+  margin: 5px 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-100px);
+}
+
+.container .card .face.face2 .content p{
+  margin: 0 5px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.container .card .face.face2 .content a{
+  margin: 8px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  padding: 0px 7px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+
+  
+  
+  /* CONTACTO */
+  #contacto{
+    background: #fff5f5;
+    background: linear-gradient(0deg, rgb(255, 235, 235, 1) 10%, rgb(255, 245, 245, 1) 100%);
+    height: 510px;
+    width: auto;
+    padding-top: 170px;
+    text-align: center;
+  }
+
+  .contacto-responsivo{
+    width: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contacto-responsivo a img{
+    width: 75px;
+    height: auto;
+    justify-content: center;
+    padding: 10px 25px 0px 25px;
+    display: flex;
+    
+    transition: all 0.8s;
+  }
+  
+  .contacto-responsivo img:hover{
+    transform: scale(1.1);
+  }
+
+  .contacto{
+    display: none;
+  }
+  
+}
+  
