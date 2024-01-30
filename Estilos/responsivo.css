@@ -640,12 +640,13 @@ hr{
 }
   
 
+
 /* SMARTPHONE FORMAT */
 
 @media (max-width: 480px) {
 
   .encabezado h1{
-    font-family: 'baskerville old face';
+    font-family: 'libre baskerville';
     font-size: 100px;
     font-weight: 100;
   }
