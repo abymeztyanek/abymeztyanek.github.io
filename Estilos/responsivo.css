@@ -600,8 +600,6 @@ hr{
   border-radius: 20px;
   font-size: 14px;
 }
-
-
   
   
   /* CONTACTO */
@@ -641,3 +639,261 @@ hr{
   
 }
   
+
+/* SMARTPHONE FORMAT */
+
+@media (max-width: 480px) {
+
+  .encabezado h1{
+    font-family: 'baskerville old face';
+    font-size: 100px;
+    font-weight: 100;
+  }
+
+  .contacto-responsivo{
+    display: none;
+  }
+  
+  .elbody a{
+    display: block;
+    position: absolute;
+    color: #ec3e4f;
+    font-weight: 400;
+    font-size: 50px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1;
+    
+    transition: all 0.5s;
+    animation: opacidad 1.3s ease-in-out 3.5s forwards;
+    opacity: 0;
+  }
+    
+  .elbody a:hover{
+    transform: scale(1.2);
+    text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .hamburger{
+    margin-left: 80%;
+    margin-right: -50%;
+    margin-top: 35px;
+  }
+  
+  
+  /* LOGO */
+  header img{
+    height: 60px;
+    width: auto;
+    margin: -20px 0 0 0;
+    float: left;
+  }
+  
+  #burger1{
+    animation: opacidad 0.5s ease-out 1.2s forwards;
+    opacity: 0;
+  }
+  
+  #burger2{
+    animation: opacidad 0.5s ease-out 1.4s forwards;
+    opacity: 0;
+  
+  }
+  
+  #burger3{
+    animation: opacidad 0.5s ease-out 1.6s forwards;
+    opacity: 0;
+  }
+  
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .active .bar:nth-child(2) {
+    opacity: 0;
+    width: 0;
+  }
+      
+  .active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(-315deg);
+    transform: translateY(8px) rotate(-315deg);
+    width: 5%;
+  }
+      
+  .active .bar:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+    width: 5%;
+  }
+  
+  .nav-menu{
+    display: flex;
+    gap: 0;
+    width: 100%;
+    height: 87%;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    right: -170%;
+    -webkit-transition: 0.5s;
+    transition: 0.6s ease-in-out;
+    border-radius: none;
+    padding-top: 0;
+  
+    background: #75bf9a;
+    color: white;
+  }
+    
+  .nav-menu a{
+    height: auto;
+    width: 150px;
+    text-decoration: none;
+    padding: 40px 100%;
+    border-radius: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 15%;
+  }
+        
+  .nav-menu a:hover{
+    color: #75bf9a;
+    background: white;
+    padding: 35px 100%;
+    font-weight: 700;
+  }
+  
+  .active {
+    right: 0;
+    z-index: 10;
+    transition: 0.2s ease;
+  }
+  
+  /* BANNER Y ESO */
+  .banner-grande-si img{
+    display: none;
+  }
+  
+  .banner-chico-si img{
+    display: none;
+  }
+  
+  .banner{
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .banner-mediano-si{
+    z-index: -2;
+  }
+  
+  .banner-mediano-si img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .encabezado{
+          position: absolute;
+          top: 40%;
+          left: 12%;
+          color: #f49277;
+          z-index: 1;
+      
+          animation: opacidad 1.3s ease-in-out 2.5s forwards;
+          opacity: 0;
+      }
+  
+  .encabezado h1{
+          font-family: 'baskerville old face';
+          font-size: 75px;
+          font-weight: 100;
+      }
+  
+  /* SOBRE MI */
+  #sobre-mi img{
+    display: block;
+    float: left;
+    width: auto;
+    height: 210px;
+    margin-left: 38%;
+    margin-top: 25px;
+  }
+  
+  #sobre-mi h3{
+    margin-top: 5px;
+    font-size: 45px;
+    color: #ec3e4f;
+    margin-bottom: 5px;
+    font-family: "baskerville old face";
+    font-weight: 100;
+  }
+  
+  .lape{
+    display: block;
+    align-items: center;
+    margin-left: 5%;
+  }
+  
+  #sobre-mi p{
+    font-size: 15px;
+    color: black;
+    width: 93%;
+    text-align: justify;
+    margin-top: 10px;
+  }
+  
+  .line-1{
+    height: 1px;
+    width: 21%;
+    margin: 20px 0;
+    margin-left: 40%;
+  }
+  
+  hr{
+    background-color: #ec3e4f;
+    height: 1px;
+    border-radius: 5px;
+  }
+  
+  /* HABILIDADES */
+  .container{
+    width: 85%;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  /* CONTACTO */
+  .contacto{
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contacto a img{
+    width: 75px;
+    height: auto;
+    justify-content: center;
+    padding: 10px 25px 0px 25px;
+    display: flex;
+    
+    transition: all 0.8s;
+  }
+  
+  .contacto img:hover{
+    transform: scale(1.1);
+  }
+  
+}
